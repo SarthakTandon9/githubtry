@@ -9,27 +9,26 @@ public class Arrays {
             return new int[] {-1, -1};
         }
         while(start<=end){
-
             int mid = start + (end-start)/2;
             if(target<nums[mid]){
                 end = mid - 1;
-            } else if(target>nums[mid]){
+            }//end of if.
+            else if(target>nums[mid]){
                 start = mid+1;
-            } else if(nums[mid] == target){
+            }//end of else if.
+            else if(nums[mid] == target){
                 value = mid;
                 end = mid-1;
-            } else break;
-        }
+            } // end of else if
+            else break;
+        }//end of while.
         for(int i = value+1; i<nums.length; i++){
-            if(nums[i] == target){
-                ++counter;
-            } else break;
-        }
-        if(value == -1){
-            return new int[] {-1, -1};
-        }
-        return new int[] {value, value+counter};
-    }
-}
+            if(nums[i] == target) ++counter;
+            else break;
+        }//end of for.
+        return value == -1? new int[] {-1, -1} : new int[]{value, value + counter};
+        //return value.
+    } // end of method.
+}// end of class.
 
 
