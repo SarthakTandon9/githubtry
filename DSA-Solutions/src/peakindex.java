@@ -5,7 +5,7 @@ public class peakindex {
         System.out.println(peakIndexInMountainArray(arr));
     }
 
-    // solution to https://leetcode.com/problems/peak-index-in-a-mountain-array/
+    // solution to https://leetcode.com/problems/peak-index-in-a-mountain-array/ && https://leetcode.com/problems/find-peak-element/
     // 100% faster solution
     public static int peakIndexInMountainArray(int[] arr) {
         int start = 0, end = arr.length-1;
