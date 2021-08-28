@@ -42,7 +42,7 @@ public class rotatedSortedArray {
         }
         return -1;
     }
-    static int binarySearch(int[] arr, int target, int start, int end) {
+    public static int binarySearch(int[] arr, int target, int start, int end) {
 
         while(start <= end) {
             // find the middle element
