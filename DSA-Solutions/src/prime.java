@@ -8,7 +8,6 @@ public class prime {
        if(n==1 || n == 0){
            return false;
        }
-
        int i = 2;
        while(i*i<=n){
            if(n%i == 0)
